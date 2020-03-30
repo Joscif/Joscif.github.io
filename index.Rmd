@@ -1,18 +1,53 @@
 ---
-title: "Untitled"
-author: "Raigne"
-date: "3/29/2020"
 output: html_document
+pagetitle: Joscif Raigne
 ---
+<style type="text/css">
+.main-container {
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
 
-<link rel="stylesheet" href="styles.css" type="text/css">
+<style>
+div.gray { background-color:#aabdaf; border-radius: 5px; padding: 20px;}
+</style>
+<div class = "gray">
 
-<img src="images/emily_2.jpg" style="width:25%; border:10px solid; margin-right: 20px" align="left">
 
-I like to analyze data to answer research questions and test hypotheses. Currently I investigate questions related to breast cancer through my work as a Research Biostatistician at [Memorial Sloan Kettering Cancer Center](https://www.mskcc.org/departments/epidemiology-biostatistics) in the department of Epidemiology & Biostatistics. 
 
-I graduated from the [University of Minnesota](http://www.sph.umn.edu/academics/divisions/biostatistics/) with a MS in biostatistics in 2010. In 2012 I began working toward my DrPH in biostatistics as a part-time student at [Columbia University](https://www.mailman.columbia.edu/become-student/departments/biostatistics), where I am investigating statistical methods for the study of etiologic heterogeneity in epidemiologic studies under the advisement of [Dr. Shuang Wang](https://www.mailman.columbia.edu/people/our-faculty/sw2206) at Columbia University and [Dr. Colin Begg](https://www.mskcc.org/profile/colin-begg) at Memorial Sloan Kettering Cancer Center. I expect to graduate by the end of 2018.
+<style>
+div.blue { background-color:#0d8f34; border-radius: 5px; padding: 20px;}
+</style>
+<div class = "blue">
 
-I am a well-known R enthusiast, including serving on the board and being an active member of [R Ladies NYC](http://www.rladiesnyc.org/). 
+## [HOME](https://joscif.github.io/) | [ABOUT ME](https://joscif.github.io/about-me/) |  [RESEARCH](https://joscif.github.io/res/) | [TWITTER](https://twitter.com/RaigneMaker) | [DATA COURSE](http://gzahn.github.io/data-course/) 
 
-My full CV is available [here](files/Zabor_CV_2017_Q4.pdf).
+# ** Utah Valley University**
+
+<div style= "float:right;position: relative;top:20px">
+```{r, out.width = "600px",echo=FALSE}
+knitr::include_graphics("../zion.jpg")
+```
+
+<br><br><br><br><br><br><br><br><br>
+<br><br><br>
+
+</div>
+
+___
+
+<br>
+
+## **Contact Info:**
+
+### Joscif Raigne<br>
+### 1801(864-4231)
+### g.raigne@gmail.com
+<br><br><br>
+
+</div>
+
+
+<a class="twitter-timeline" data-width="300" data-height="500" data-theme="dark" href="https://twitter.com/RaigneMaker">Tweets by Joscif G Raigne</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
