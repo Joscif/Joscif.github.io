@@ -11,7 +11,7 @@ pagetitle: Joscif Raigne
 </style>
 
 <style>
-div.gray { background-color:#aabdaf; border-radius: 5px; padding: 20px;}
+div.gray { background-color:#025e08; border-radius: 5px; padding: 20px;}
 </style>
 <div class = "gray">
 
