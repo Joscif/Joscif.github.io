@@ -10,7 +10,7 @@ pagetitle: Joscif Raigne
   margin-right: auto;
   margin-top: 25px;
   background-color: white;
-  height: 750px;
+  height: 110%;
 
 }
 body{
