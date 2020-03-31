@@ -18,13 +18,13 @@ div.gray { background-color:#025e08; border-radius: 5px; padding: 20px;}
 
 
 <style>
-div.blue { background-color:#0d8f34; border-radius: 5px; padding: 20px;}
+div.blue { background-color:#3a5c3c; border-radius: 5px; padding: 20px;}
 </style>
-<div class = "blue">
+<div class = "black">
 
 ## [HOME](https://joscif.github.io/) | [ABOUT ME](https://joscif.github.io/about-me/) |  [RESEARCH](https://joscif.github.io/res/) | [TWITTER](https://twitter.com/RaigneMaker) | [DATA COURSE](http://gzahn.github.io/data-course/) 
 
-# ** Utah Valley University**
+#  Utah Valley University
 
 <div style= "float:right;position: relative;top:20px">
 ```{r, out.width = "600px",echo=FALSE}

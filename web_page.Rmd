@@ -1,0 +1,111 @@
+---
+output: html_document
+pagetitle: Joscif Raigne
+---
+
+<style type="text/css">
+.main-container {
+  max-width: 97%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  background-color: white;
+  height: 750px;
+
+}
+body{
+  background-color: green;
+  height: 800px;
+  
+}
+header{
+  float: center;
+    background-color: green;
+    height: 307px;
+    width: 110%;
+    margin: -21px -20px 0 -15px;
+
+}
+
+p{
+      margin: 0 0 -241px;
+}
+a{
+  color: black;
+
+}
+
+.image-corner{
+  float:left;
+  margin-top: 200px;
+
+}
+.main-text{
+  margin-top:140px;
+  margin-left:377px;
+
+}
+
+.con{
+    margin-top: -14px;
+    margin-left: 377px;
+    color: black;
+    font-size: 20px;
+}
+
+
+
+}
+header.img{
+  border-style: solid;
+  border-width: 15px;
+}
+
+
+
+</style>
+
+<header>
+<div class="header">
+
+
+
+<div class = "link-text;">
+## [HOME](https://joscif.github.io/) | [ABOUT ME](https://joscif.github.io/about-me/) |  [RESEARCH](https://joscif.github.io/res/) | [TWITTER](https://twitter.com/RaigneMaker) | [DATA COURSE](http://gzahn.github.io/data-course/) 
+
+<h3 style= "color:black;">**Joscif Raigne** </h3>
+
+<img src="../zion.jpg" alt="Joscif Raigne" width="370" height="370" style="  border-style: solid;
+  border-width: 5px;
+  border-color: black">
+  
+  
+  
+<div class=con>
+<h3>**Email:** </h3>
+g.raigne@gmail.com <br>
+</div>
+
+<div class="main-text">
+
+
+  
+</div>
+
+  
+  
+
+
+</header>
+
+<body>
+<div class="main-text">
+<h2>About</h2>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+</div>
+
+</body>
+<footer>
+</footer>
+
