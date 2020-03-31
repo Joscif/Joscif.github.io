@@ -2,52 +2,110 @@
 output: html_document
 pagetitle: Joscif Raigne
 ---
+
 <style type="text/css">
 .main-container {
-  max-width: 1800px;
+  max-width: 97%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 25px;
+  background-color: white;
+  height: 750px;
+
 }
+body{
+  background-color: green;
+  height: 800px;
+  
+}
+header{
+  float: center;
+    background-color: green;
+    height: 307px;
+    width: 110%;
+    margin: -21px -20px 0 -15px;
+
+}
+
+p{
+      margin: 0 0 -241px;
+}
+a{
+  color: black;
+
+}
+
+.image-corner{
+  float:left;
+  margin-top: 200px;
+
+}
+.main-text{
+  margin-top:140px;
+  margin-left:377px;
+
+}
+
+.con{
+    margin-top: -14px;
+    margin-left: 377px;
+    color: black;
+    font-size: 20px;
+}
+
+
+
+}
+header.img{
+  border-style: solid;
+  border-width: 15px;
+}
+
+
+
 </style>
 
-<style>
-div.gray { background-color:#025e08; border-radius: 5px; padding: 20px;}
-</style>
-<div class = "gray">
+<header>
+<div class="header">
 
 
 
-<style>
-div.blue { background-color:#3a5c3c; border-radius: 5px; padding: 20px;}
-</style>
-<div class = "black">
-
+<div class = "link-text;">
 ## [HOME](https://joscif.github.io/) | [ABOUT ME](https://joscif.github.io/about-me/) |  [RESEARCH](https://joscif.github.io/res/) | [TWITTER](https://twitter.com/RaigneMaker) | [DATA COURSE](http://gzahn.github.io/data-course/) 
 
-#  Utah Valley University
+<h3 style= "color:black;">**Joscif Raigne** </h3>
 
-<div style= "float:right;position: relative;top:20px">
-```{r, out.width = "600px",echo=FALSE}
-knitr::include_graphics("../zion.jpg")
-```
+<img src="../zion.jpg" alt="Joscif Raigne" width="370" height="370" style="  border-style: solid;
+  border-width: 5px;
+  border-color: black">
+  
+  
+  
+<div class=con>
+<h3>**Email:** </h3>
+g.raigne@gmail.com <br>
+</div>
 
-<br><br><br><br><br><br><br><br><br>
-<br><br><br>
+<div class="main-text">
+
+
+  
+</div>
+
+  
+  
+
+
+</header>
+
+<body>
+<div class="main-text">
+<h2>About</h2>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 
 </div>
 
-___
+</body>
+<footer>
+</footer>
 
-<br>
-
-## **Contact Info:**
-
-### Joscif Raigne<br>
-### 1801(864-4231)
-### g.raigne@gmail.com
-<br><br><br>
-
-</div>
-
-
-<a class="twitter-timeline" data-width="300" data-height="500" data-theme="dark" href="https://twitter.com/RaigneMaker">Tweets by Joscif G Raigne</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
