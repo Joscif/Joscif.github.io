@@ -13,7 +13,7 @@ pagetitle: Research
 }
 </style>
 
-## [HOME](http://gzahn.github.io/) | [ABOUT ME](http://gzahn.github.io/about-me/) | [RESEARCH](http://gzahn.github.io/pubs-and-pres/) | [DATA COURSE](http://gzahn.github.io/data-course/) |
+## [HOME](https://joscif.github.io/) | [ABOUT ME]() | [DATA COURSE](http://gzahn.github.io/data-course/) |
 
 <div style= "float:right;position: relative;top:10px">
 ```{r, out.width = "300px",echo=FALSE}
@@ -34,8 +34,7 @@ Utah Valley University
 
 ## Quick links:
 
-#### [Course GitHub Repository](https://github.com/gzahn/Data_Course)
-#### [Course Syllabus](https://github.com/gzahn/Data_Course/blob/master/Syllabus.pdf)
+####  [GITHUB REPO](https://github.com/Joscif/Data_Course_RAIGNE)
 #### [Shared Course Notes](https://docs.google.com/document/d/1Nnjv1RkdegUR3pOp8Jb81ryE-_C59T4dLWYyJqVSz9Y/edit?usp=sharing)
 (Anyone with link can edit)
 

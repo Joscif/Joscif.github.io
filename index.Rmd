@@ -74,7 +74,7 @@ dl {
 
 
 <div class = "link-text;">
-## [HOME](https://joscif.github.io/) | [ABOUT ME](https://joscif.github.io/about-me/) |  [RESEARCH](https://joscif.github.io/RESEARCH/) | [GITHUB REPO](https://github.com/Joscif/Data_Course_RAIGNE) | [TWITTER](https://twitter.com/RaigneMaker) | [DATA COURSE](http://gzahn.github.io/data-course/) 
+## [HOME](https://joscif.github.io/) | [ABOUT ME](https://joscif.github.io/about-me/) |  [RESEARCH](https://joscif.github.io/RESEARCH/) | [TWITTER](https://twitter.com/RaigneMaker) | [DATA COURSE](http://gzahn.github.io/data-course/) 
  
 <h3 style= "color:black;">**Joscif Raigne** </h3>
 
