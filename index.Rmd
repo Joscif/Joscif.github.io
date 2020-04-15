@@ -74,8 +74,9 @@ dl {
 
 
 <div class = "link-text;">
-## [HOME](https://joscif.github.io/) | [ABOUT ME](https://joscif.github.io/about-me/) |  [RESEARCH](https://joscif.github.io/res/) | [TWITTER](https://twitter.com/RaigneMaker) | [DATA COURSE](http://gzahn.github.io/data-course/) 
-
+## [HOME](https://joscif.github.io/) | [ABOUT ME](https://joscif.github.io/about-me/) |  [RESEARCH](https://joscif.github.io/res/) | [TWITTER](https://twitter.com/RaigneMaker) | [DATA COURSE](http://gzahn.github.io/data-course/) |
+[Projects](http://joscif.github.io/Exam_3_rmd_web.html)
+ 
 <h3 style= "color:black;">**Joscif Raigne** </h3>
 
 <img src="../zion.jpg" alt="Joscif Raigne" width="370" height="370" style="  border-style: solid;

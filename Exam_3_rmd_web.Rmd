@@ -1,0 +1,209 @@
+---
+title: "Exam_3_CARS"
+author: "Raigne"
+date: "4/15/2020"
+output: html_document
+---
+## Analyzing Data
+**Load in Libraries and data:**
+```{r setup, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(modelr)
+library(GGally)
+library(lindia)
+library(skimr)
+library(patchwork)
+library(caret)
+library(scales)
+library(cowplot)
+library(RColorBrewer)
+
+data("mtcars")
+```
+**Whats in the mtcars data:**
+
+**A data frame with 32 observations on 11 (numeric) variables.**
+
+**[, 1]	mpg	Miles/(US) gallon**
+
+**[, 2]	cyl	Number of cylinders**
+
+**[, 3]	disp	Displacement (cu.in.)**
+
+**[, 4]	hp	Gross horsepower**
+
+**[, 5]	drat	Rear axle ratio**
+
+**[, 6]	wt	Weight (1000 lbs)**
+
+**[, 7]	qsec	1/4 mile time**
+
+**[, 8]	vs	Engine (0 = V-shaped, 1 = straight)**
+
+**[, 9]	am	Transmission (0 = automatic, 1 = manual)**
+
+**[,10]	gear	Number of forward gears**
+
+**[,11]	carb	Number of carburetors**
+
+
+**Look for orrelation:**
+
+```{r compare, message=FALSE, warning=FALSE}
+
+mtcars %>% ggpairs()
+mtcars %>% ggpairs(mapping =c("mpg", "cyl","wt","disp","hp"))
+
+```
+
+**Comparing all variables to the dependent variable MPG using their correlation values, we see that cyl, wt, disp, drat and hp are the most correlated to mpg. The best model most likely will contain these independent variables. Lets test it!**
+ 
+ **The four chosen models in ascending order:**
+``` {R, message=FALSE, warning=FALSE}
+# lm() is linear model. There are LOTS of other model types
+mod1 <- lm(data=mtcars, formula = mpg ~ hp)
+mod2 <- lm(data=mtcars, formula = mpg ~ hp + wt)
+mod3 <- lm(data=mtcars, formula = mpg ~ hp * wt)
+mod4 <- lm(data=mtcars, formula = mpg ~ hp * cyl * wt + disp+ drat)
+
+model_1 <- formula(mod1)
+model_2 <- formula(mod2)
+model_3 <- formula(mod3)
+model_4 <- formula(mod4)
+model_1
+model_2
+model_3
+model_4
+```
+**Compare the 4 models**
+```{R,message=FALSE, warning=FALSE, echo=FALSE}
+summary(mod1)
+summary(mod2)
+summary(mod3)
+summary(mod4)
+
+
+mod1mse <- mean(residuals(mod1)^2)
+mod2mse <- mean(residuals(mod2)^2)
+mod3mse <- mean(residuals(mod3)^2)
+mod4mse <- mean(residuals(mod4)^2)
+```
+
+**Check the MSE (mean squared error) of each model and pick the one with least error compared to reality(ascending order 1-4)**
+
+```{R,message=FALSE, warning=FALSE, echo=FALSE}
+mod1mse 
+mod2mse 
+mod3mse 
+mod4mse
+```
+
+**We see that model 4 has the best fit. (3.634)**
+
+**Lets do a cross-validation and test it.** 
+
+**If we train our model on the full data set, it can become "over-trained" In other words, we want to make sure our model works for the SYSTEM, not just the data set**
+**Set seed and divide mtcars randomly in half. Train model on first half and test on second half:**
+```{R}
+set.seed(123) # set reproducible random number seed
+set <- caret::createDataPartition(mtcars$mpg, p=.5) # pick random subset of data 
+set <- set$Resample1 # convert to vector
+
+train <- mtcars[set,] # subset mtcars using the random row numbers we made
+test <- mtcars[-set,] # The other half of the mtcars
+```
+
+**Build cross validation model from model 4**
+**and test it on other half of data**
+```{R, echo=F}
+# build our best mpg model (mod4, from above)
+formula(mod4)
+mod4_cv <- lm(data=train, formula = formula(mod4))
+
+
+# Test trained model on unused other half of data set
+cartest <- add_predictions(test,mod4_cv)
+```
+**plot actaul mpg against predictions**
+```{R, echo=F}
+# plot it
+ggplot(cartest,aes(x=hp,color=wt)) +
+  geom_point(aes(y=mpg),alpha=.25) +
+  geom_point(aes(y=pred),shape=2)
+```
+
+**triangles = pred and circles = actaul mpg**
+** values seem to be similar**
+
+**Now lets compare are over fitted model 4 to VC-model 4, using MSE**
+
+```{R, echo=F}
+# compare MSE from our over-fitted model to the cross-validated one
+mod4mse # our original MSE (mean squared error)
+```
+*Model 4 (3.63)*
+
+```{R, echo=F}
+testedresiduals <- (cartest$pred - cartest$mpg)
+mean(testedresiduals^2) # our cross-validated model
+```
+*CV-Model 4 (22.89)*
+
+
+**Plot and compare Model 4 to CV-Model 4**
+```{R, echo=F}
+# Plot comparison of original and validated model 
+
+# gather model predictions
+df <- gather_predictions(mtcars, mod4,mod4_cv)
+
+# plot - distinguish model predictions using "linetype"
+ggplot(df, aes(x=hp,color=wt)) +
+  geom_point(aes(y=mpg),alpha=.2) +
+  geom_smooth(method = "lm",aes(linetype=model,y=pred)) + theme_bw()
+
+```
+.
+
+**Our CV-model 4 is similar to Model 4 but with a slight different slope and y-intercept. This shows us that our model is not overtrained and is ready to make predictions of mpg baseed on cyl, wt, disp, and hp. Lets plot actaul mpg vs mpg of the mtcars data based on the five variables of interest**
+
+```{R,message=FALSE }
+df1 <- gather_predictions(test,mod4_cv)
+
+p1 <- ggplot(df1, aes(x=cyl,color=wt)) +
+  geom_point(aes(y=mpg),alpha=.2) +
+  geom_smooth(method = "lm",aes(y=pred))+
+  geom_smooth(method = "lm",linetype="dashed", aes(y=mpg))+ theme_bw()+
+  labs(title = "mpg vs cyl")
+
+p2 <- ggplot(df1, aes(x=hp,color=wt)) +
+  geom_point(aes(y=mpg),alpha=.2) +
+  geom_smooth(method = "lm",aes(y=pred))+
+  geom_smooth(method = "lm",linetype="dashed", aes(y=mpg))+ theme_bw()+
+  labs(title = "mpg vs hp")
+  
+
+p3 <- ggplot(df1, aes(x=drat,color=wt)) +
+  geom_point(aes(y=mpg),alpha=.2) +
+  geom_smooth(method = "lm",aes(y=pred))+
+  geom_smooth(method = "lm",linetype="dashed", aes(y=mpg))+ theme_bw()+
+  labs(title = "mpg vs drat")
+
+p4 <- ggplot(df1, aes(x=wt,color=hp)) +
+  geom_point(aes(y=mpg),alpha=.2) +
+  geom_smooth(method = "lm",aes(y=pred))+
+  geom_smooth(method = "lm",linetype="dashed", aes(y=mpg))+ theme_bw()+
+  labs(title = "mpg vs wt")
+
+p5 <- ggplot(df1, aes(x=disp,color=wt)) +
+  geom_point(aes(y=mpg),alpha=.2) +
+  geom_smooth(method = "lm",aes(y=pred))+
+  geom_smooth(method = "lm",linetype="dashed", aes(y=mpg))+ theme_bw()+
+  labs(title = "mpg vs disp")
+plot_grid(p1,p2,p3,p4,p5)
+```
+
+**Dotted line = actual, solid line = pred mpg**
+
+**Looking at the graphs we see that our CV-Model 4 is doing a pretty good job of predicting mpg of the test data set.**
+**We can now take this model and by gathering all of the five  values of indpendent factors of a given car predict fairly accurately what the mpg is of that car**
