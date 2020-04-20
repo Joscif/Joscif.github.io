@@ -13,7 +13,7 @@ pagetitle: Research
 }
 </style>
 
-## [HOME](https://joscif.github.io/) | [ABOUT ME]() | [DATA COURSE](http://gzahn.github.io/data-course/) |
+## [HOME](https://joscif.github.io/) | [ABOUT ME]() | [ZAHN DATA COURSE](http://gzahn.github.io/data-course/) |
 
 <div style= "float:right;position: relative;top:10px">
 ```{r, out.width = "300px",echo=FALSE}
@@ -22,7 +22,7 @@ pagetitle: Research
 </div>
 
 <style>
-div.gray { background-color:#aabdaf; border-radius: 5px; padding: 20px;}
+div.gray { background-color:#1D741B; border-radius: 5px; padding: 20px;}
 </style>
 <div class = "gray">
 
