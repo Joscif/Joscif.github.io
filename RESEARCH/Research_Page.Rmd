@@ -11,9 +11,20 @@ pagetitle: Research
   margin-left: auto;
   margin-right: auto;
 }
+a{
+  color: black;
+  
+}
+.con{
+    color: black;
+    font-size: 20px;
+}
+
 </style>
 
-## [HOME](https://joscif.github.io/) | [ABOUT ME]() | [ZAHN DATA COURSE](http://gzahn.github.io/data-course/) |
+<div class = "link-text;">
+
+## |[HOME](https://joscif.github.io/) | [ABOUT ME]() | [ZAHN DATA COURSE](http://gzahn.github.io/data-course/) |
 
 <div style= "float:right;position: relative;top:10px">
 ```{r, out.width = "300px",echo=FALSE}
@@ -22,17 +33,17 @@ pagetitle: Research
 </div>
 
 <style>
-div.gray { background-color:#1D741B; border-radius: 5px; padding: 20px;}
+div.black { background-color:#1D741B; border-radius: 5px; padding: 20px;}
 </style>
-<div class = "gray">
+<div class = "black">
 
-
+<div class=con>
 # **Research**{#top}
 Utah Valley University 
 
 
 
-## Quick links:
+## Quick links
 
 ####  [GITHUB REPO](https://github.com/Joscif/Data_Course_RAIGNE)
 #### [Shared Course Notes](https://docs.google.com/document/d/1Nnjv1RkdegUR3pOp8Jb81ryE-_C59T4dLWYyJqVSz9Y/edit?usp=sharing)
@@ -41,9 +52,9 @@ Utah Valley University
 
 ___
 
-Data Work
+## Data Work
 
-[Exam 3](http://joscif.github.io/Exam_3_rmd_web.html)    |    [Oryza Sativa Proj.](#Week-5)    |   
+#### [Exam 3](http://joscif.github.io/Exam_3_rmd_web.html)| [Oryza Sativa Proj.](#Week-5)    
 
 
 
@@ -53,7 +64,7 @@ Data Work
 ___
 
 <style>
-div.blue { background-color:#a89d82; border-radius: 5px; padding: 20px;}
+div.blue { background-color:black; border-radius: 5px; padding: 20px;}
 </style>
 <div class = "blue">
 
