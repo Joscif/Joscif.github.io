@@ -41,13 +41,12 @@ div.black { background-color:#1D741B; border-radius: 5px; padding: 20px;}
 # **Research**{#top}
 Utah Valley University 
 
-
+___
 
 ## Quick links
 
-####  [GITHUB REPO](https://github.com/Joscif/Data_Course_RAIGNE)
-#### [Shared Course Notes](https://docs.google.com/document/d/1Nnjv1RkdegUR3pOp8Jb81ryE-_C59T4dLWYyJqVSz9Y/edit?usp=sharing)
-(Anyone with link can edit)
+####  [GITHUB REPO](https://github.com/Joscif/Data_Course_RAIGNE)| [COURSE NOTES](https://docs.google.com/document/d/1Nnjv1RkdegUR3pOp8Jb81ryE-_C59T4dLWYyJqVSz9Y/edit?usp=sharing)
+(edit)
 
 
 ___
