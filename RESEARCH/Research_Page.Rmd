@@ -45,7 +45,7 @@ ___
 
 ## Quick links
 
-####  [GITHUB REPO](https://github.com/Joscif/Data_Course_RAIGNE)| [COURSE NOTES](https://docs.google.com/document/d/1Nnjv1RkdegUR3pOp8Jb81ryE-_C59T4dLWYyJqVSz9Y/edit?usp=sharing)
+####  [GITHUB REPO](https://github.com/Joscif/Data_Course_RAIGNE) | [COURSE NOTES](https://docs.google.com/document/d/1Nnjv1RkdegUR3pOp8Jb81ryE-_C59T4dLWYyJqVSz9Y/edit?usp=sharing)
 (edit)
 
 
@@ -53,7 +53,7 @@ ___
 
 ## Data Work
 
-#### [Exam 3](http://joscif.github.io/Exam_3_rmd_web.html)| [Oryza Sativa Proj.](#Week-5)   
+#### [Exam 3](http://joscif.github.io/Exam_3_rmd_web.html) | [Oryza Sativa Proj.](#Week-5)   
 
 ___
 

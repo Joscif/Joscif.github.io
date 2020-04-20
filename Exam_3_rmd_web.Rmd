@@ -47,6 +47,7 @@ data("mtcars")
 **[,11]	carb	Number of carburetors**
 
 
+
 **Look for orrelation:**
 
 ```{r compare, message=FALSE, warning=FALSE}
@@ -57,6 +58,8 @@ mtcars %>% ggpairs(mapping =c("mpg", "cyl","wt","disp","hp"))
 ```
 
 **Comparing all variables to the dependent variable MPG using their correlation values, we see that cyl, wt, disp, drat and hp are the most correlated to mpg. The best model most likely will contain these independent variables. Lets test it!**
+
+
  
  **The four chosen models in ascending order:**
 ``` {R, message=FALSE, warning=FALSE}
@@ -76,7 +79,7 @@ model_3
 model_4
 ```
 **Compare the 4 models**
-```{R,message=FALSE, warning=FALSE, echo=FALSE}
+```{R,message=FALSE, warning=FALSE}
 summary(mod1)
 summary(mod2)
 summary(mod3)
@@ -151,7 +154,7 @@ mean(testedresiduals^2) # our cross-validated model
 
 
 **Plot and compare Model 4 to CV-Model 4**
-```{R, echo=F}
+```{R,}
 # Plot comparison of original and validated model 
 
 # gather model predictions
