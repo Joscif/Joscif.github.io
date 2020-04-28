@@ -53,7 +53,7 @@ ___
 
 ## Data Work
 
-#### [Exam 3](http://joscif.github.io/Exam_3_rmd_web.html) | [Oryza Sativa Project](http://joscif.github.io/Phylo.Proj/ORYZA_PROJ_MD.html)   
+#### [Exam 3](http://joscif.github.io/Exam_3_rmd_web.html) | [Oryza Sativa Project](http://joscif.github.io/RESEARCH/Phylo.Proj/ORYZA_PROJ_MD.html)   
 
 ___
 
