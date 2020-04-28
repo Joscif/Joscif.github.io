@@ -26,8 +26,10 @@ library(ggtree)
 ```
 |
 |   The UPGMA Maximum Likely Tree was built using GTR+G model along with bootstrap test(500 replicants). 
-For code see links below
+For code see links below:
+
 [01_Build_Ory_Tree](http://joscif.github.io/RESEARCH/Phylo.Proj/01_Build_Ory_Tree.R)
+
 [02_Tree2](http://joscif.github.io/RESEARCH/Phylo.Proj/02_Tree2.R)
 
 ### Tree analysis
